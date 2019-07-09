@@ -3,7 +3,7 @@
 
     <t t-name="ReturnButton">
         <div class='control-button'>
-            <i class='fa fa-rotate-left' /> Return
+            <i class='fa fa-rotate-left' /> Devoluciones
         </div>
     </t>
 
@@ -15,7 +15,7 @@
             </t></td>
             <td><t t-esc='order.partner_id[1]' /></td>
             <td><t t-esc='order.date_order' /></td>
-            <td><span class="return-button return_order">Return</span></td>
+            <td><span class="return-button return_order">Devolver</span></td>
         </tr>
     </t>
 
@@ -25,10 +25,10 @@
                 <section class="top-content">
                     <span class='button back'>
                         <i class='fa fa-angle-double-left'></i>
-                        Cancel
+                        Cancelar
                     </span>
                     <span class='searchbox'>
-                        <input placeholder='Search' />
+                        <input placeholder='Buscar' />
                         <span class='search-clear'></span>
                     </span>
                     <span class='searchbox'></span>
@@ -42,10 +42,10 @@
                                     <table class='order-list'>
                                         <thead>
                                             <tr>
-                                                <th>Order Ref</th>
-                                                <th>Return Ref</th>
-                                                <th>Partner</th>
-                                                <th>Date</th>
+                                                <th>Referencia</th>
+                                                <th>Devolucion Ref</th>
+                                                <th>Cliente</th>
+                                                <th>Fecha</th>
                                             </tr>
                                         </thead>
                                         <tbody class='order-list-contents'>
@@ -62,19 +62,19 @@
     <t t-name="ReturnWidget">
         <div class="modal-dialog" role="dialog">
             <div class="popup popup-selection product_return_pos">
-                <p class="title">Return Order</p>
+                <p class="title">Devolver Orden</p>
                 <div class='selection scrollable-y touch-scrollable'>
                     <table id = "list" cellspacing = "1px" cellpadding = "10px" text-align = "center"
                            width="100%" style="border:1px;padding-left:1.16cm;">
                         <thead>
                             <tr>
                                 <td>ID</td>
-                                <td>Price</td>
-                                <td>Name</td>
-                                <td>Qty</td>
-                                <td>Dis</td>
-                                <td>Line ID</td>
-                                <td>Returned Quantity</td>
+                                <td>Precio</td>
+                                <td>Nombre</td>
+                                <td>Cantidad</td>
+                                <td>Descuento</td>
+                                <td>Linea ID</td>
+                                <td>Cantidad Devolver</td>
                             </tr>
                         </thead>
                         <tbody id="table-body">
@@ -83,10 +83,10 @@
                 </div>
                 <div class="footer">
                     <div class="button confirm">
-                            Return
+                            Devolver
                         </div>
                     <div class="button cancel">
-                        Cancel
+                        Cancelar
                     </div>
                 </div>
             </div>
