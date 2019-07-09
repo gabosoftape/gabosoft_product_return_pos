@@ -22,7 +22,7 @@
     'version': '12.0.0.1.0',
     'category': 'Point of Sale',
     'summary': 'POS Order Return',
-    'author': 'Cybrosys Techno Solutions',
+    'author': 'Cybrosys Techno Solutions, Gabriel Pabon',
     'company': 'Cybrosys Techno Solutions',
     'maintainer': 'Cybrosys Techno Solutions',
     'images': ['static/description/banner.jpg'],
